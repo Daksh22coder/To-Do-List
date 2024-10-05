@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: skyblue;
+    border: 1px solid orange;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    font-family: "Dancing Script",cursive;
+    font-size: 50px;
+}
+
+#task-input {
+    width: 260px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+#add-task-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    padding: 5%;
+    margin: 0px;
+}
+
+.task-item {
+    padding: 10px;
+    border-bottom: 10px solid #ccc;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    background-color: darkred;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    #task-input {
+        padding: 5px;
+    }
+    #add-task-btn {
+        padding: 5px 10px;
+    }
+}
